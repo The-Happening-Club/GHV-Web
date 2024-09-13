@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -25,6 +25,12 @@ const BurgerLink = ({link, name}: {link: string, name: string}) => {
 const BurgerMenu = () => {  
 
     const [burgerOpen, setBurgerOpen] = useState(false)
+
+    useEffect(() => {
+
+        setBurgerOpen(false)
+    }
+    ,[])
 
     return(
         <>
@@ -65,7 +71,7 @@ const NavBar = () => {
         <nav className="flex h-20 w-full justify-center items-center px-4 bg-slate-50 overflow-hidden">
             <div className="flex justify-between items-center w-full max-w-[1366px]">
                 <div className=" flex justify-center items-center w-fit z-50">
-                    <Link href={'/'} className="flex items-center gap-4 text-blue-950">
+                    <Link href={'/'} className="flex items-center gap-4 text-blue-950" >
                         <Image src={"/logo/nav_logo.png"} width={40} height={40} alt="GHV Logo"/>
                         {/* Logo mit Text hinzufügen und Switchen */}
                         <h3 className="hidden md:block font-semibold text-lg">GHV Hausverwaltung</h3>

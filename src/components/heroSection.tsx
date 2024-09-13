@@ -17,7 +17,7 @@ const HeroSection = () => {
               <Image src="/img/andreas_hero_section.png" height={800} width={400} alt="Ein Portrait" className="relative z-10 drop-shadow-xl"/>
             </div>
           </div>
-          <div className="bg-slate-400">
+          <div className="">
               <h1 className="text-slate-50 font-semibold text-5xl md:text-7xl">Ihre Immobilie in guten Händen</h1>
           </div>
         </div>
