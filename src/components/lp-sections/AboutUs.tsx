@@ -1,4 +1,4 @@
-import React,{FC} from "react";
+import React from "react";
 import { classed } from "@tw-classed/react";
 import TeamMemberCard from "./TeamMemberCard";
 import Button from "../essentials/Button";

@@ -10,7 +10,6 @@ interface IServiceCard {
 }
 
 const CardTitle = classed("h4", "font-semibold text-xl");
-const CardParagraph = classed("p", "text-md");
 const ImgContainer = classed("div", "relative flex w-1/3 h-full overflow-hidden");
 
 const TeamMemberCard: FC<IServiceCard> = ({ imgSrc, name, surename, position }) => {
