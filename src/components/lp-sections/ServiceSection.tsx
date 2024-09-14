@@ -1,7 +1,6 @@
 import React from "react";
 import { classed } from "@tw-classed/react";
 import ServiceCard from "./ServiceCard";
-import { title } from "process";
 
 
 const ClassedSection = classed("section", "flex justify-center bg-gradient-to-t from-slate-50 to-slate-100 px-4 md:px-0 pt-16 pb-24 md:pb-32")

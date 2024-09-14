@@ -29,7 +29,7 @@ const ServiceCard:FC<IServiceCard> = ({imgSrc, title, info, href}) => {
                 <CardParagraph>{info}</CardParagraph>
             </div>
             <div className="flex w-full h-full items-end">
-                <Button title="mehr erfahren" href="/services" prio={3} />
+                <Button title="mehr erfahren" href={href} prio={3} />
             </div>
         </div>
     )
