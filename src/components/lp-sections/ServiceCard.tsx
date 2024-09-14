@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Link from "next/link";
 import React, {FC} from "react";
 import { classed } from "@tw-classed/react";
+import Button from "../essentials/Button";
 
 
 interface IServiceCard {
@@ -12,15 +12,15 @@ interface IServiceCard {
 }
 
 
-const CardTitle = classed("h4", "font-semibold text-lg")
+const CardTitle = classed("h4", "font-semibold text-xl")
 const CardParagraph = classed("p", "text-md")
-const ImgContainer = classed("div", "flex w-fit h-fit rounded-lg bg-red-500 overflow-hidden")
+const ImgContainer = classed("div", "flex w-fit h-fit")
 
 const ServiceCard:FC<IServiceCard> = ({imgSrc, title, info, href}) => {
 
     return(
-        <div className="flex flex-col items-center text-blue-dark gap-8">
-            <ImgContainer className="">
+        <div className="flex flex-col md:w-96 items-center text-slate-50 gap-8 bg-blue-dark rounded-xl drop-shadow-xl px-6 pt-4 pb-8">
+            <ImgContainer>
                 <Image src={imgSrc} width={200} height={200} alt=""/>
             </ImgContainer>
 
@@ -28,8 +28,8 @@ const ServiceCard:FC<IServiceCard> = ({imgSrc, title, info, href}) => {
                 <CardTitle>{title}</CardTitle>
                 <CardParagraph>{info}</CardParagraph>
             </div>
-            <div className="flex w-full">
-                <Link href={href} >mehr erfahren</Link>
+            <div className="flex w-full h-full items-end">
+                <Button title="mehr erfahren" href="/services" prio={3} />
             </div>
         </div>
     )
