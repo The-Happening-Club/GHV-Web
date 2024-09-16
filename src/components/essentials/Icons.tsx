@@ -17,3 +17,21 @@ export const ArrowRightIcon:FC<IIcon> = ({strokeColor, size}) => {
         </svg>
     )
 }
+
+
+
+export const AppleStoreIcon = () => {
+
+    return (
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+            <rect width="30" height="30" fill="url(#pattern0_1509_228)"/>
+            <defs>
+            <pattern id="pattern0_1509_228" patternContentUnits="objectBoundingBox" width="1" height="1">
+
+            </pattern>
+            <image id="image0_1509_228" width="512" height="512" />
+            </defs>
+        </svg>
+
+    )
+}
