@@ -1,3 +1,82 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "root": true,
+  "extends": ["eslint:recommended", "next"],
+  "plugins": [
+    "eslint-comments",
+    "import",
+    "prettier",
+    "simple-import-sort",
+    "@typescript-eslint"
+  ],
+  "overrides": [
+    {
+      "files": ["*.tsx"],
+      "rules": {
+        "react/self-closing-comp": [
+          "error",
+          {
+            "component": true,
+            "html": true
+          }
+        ]
+      }
+    },
+    {
+      "files": ["*.ts", "*.tsx"],
+      "rules": {
+        "prettier/prettier": [
+          "error",
+          {
+            "endOfLine": "auto"
+          }
+        ],
+        "import/no-duplicates": "error",
+        "import/no-cycle": [
+          "error",
+          {
+            "maxDepth": 100000
+          }
+        ],
+        "simple-import-sort/imports": ["error"],
+        "@typescript-eslint/consistent-type-exports": "error",
+        "@typescript-eslint/consistent-type-imports": "error",
+        "lines-between-class-members": [
+          "error",
+          "always",
+          {
+            "exceptAfterSingleLine": true
+          }
+        ],
+        "newline-after-var": ["error", "always"],
+        "padding-line-between-statements": [
+          "error",
+          {
+            "blankLine": "always",
+            "prev": "multiline-block-like",
+            "next": "multiline-block-like"
+          },
+          {
+            "blankLine": "always",
+            "prev": "multiline-expression",
+            "next": "multiline-expression"
+          }
+        ],
+        "react-hooks/rules-of-hooks": "error",
+        "no-console": "warn"
+      }
+    },
+    {
+      "files": ["*.d.ts"],
+      "rules": {
+        "@typescript-eslint/no-unused-vars": "off"
+      }
+    },
+    {
+      "files": ["*.spec.ts", "*.spec.tsx", "*.spec.js", "*.spec.jsx"],
+      "env": {
+        "jest": true
+      },
+      "rules": {}
+    }
+  ]
 }
