@@ -5,7 +5,7 @@ import { classed } from "@tw-classed/react";
 
 
 const ClassedSubHeader = classed("h1", "flex w-full justify-center text-lg md:text-xl font-light text-slate-50 uppercase")
-const ClassedHeader = classed("h4", "flex w-full justify-center text-2xl md:text-4xl font-semibold text-slate-50")
+const ClassedHeader = classed("h4", "flex font-normalidad w-full justify-center text-2xl md:text-4xl font-semibold text-slate-50")
 
 
 const CounterSection = () => {
@@ -59,7 +59,7 @@ const CounterSection = () => {
 
 
     return(
-        <div className="flex flex-col  items-center md:justify-center bg-gradient-to-tl from-blue-dark to-blue-950 text-slate-50  pt-10 pb-20  gap-16">
+        <div className="flex flex-col items-center md:justify-center bg-gradient-to-tl from-blue-dark to-blue-950 text-slate-50  pt-10 pb-20  gap-16">
             <div>
                 <ClassedSubHeader>
                         Zählen sie auf uns

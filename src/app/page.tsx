@@ -12,6 +12,9 @@ export default function Home() {
         <ServiceSection />
         <CounterSection />
         <AboutUs />
+        <div className="flex justify-center">
+          <hr className="flex w-2/3"/>
+        </div>
         <CasaviSection />
     </div>
   );

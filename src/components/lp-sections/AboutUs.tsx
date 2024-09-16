@@ -3,7 +3,7 @@ import { classed } from "@tw-classed/react";
 import TeamMemberCard from "./TeamMemberCard";
 import Button from "../essentials/Button";
 
-const ClassedSection = classed("section", "flex justify-center bg-gradient-to-t from-slate-50 to-slate-100 px-4 md:px-0 pt-16 pb-24 md:pb-32")
+const ClassedSection = classed("section", "flex justify-center bg-gradient-to-t from-slate-50 to-slate-100 px-4 md:px-0 pt-16 pb-16 md:pb-32")
 const ClassedSectionContainer = classed("div", " flex flex-col max-w-[1366px]")
 const ClassedSubHeader = classed("h1", "flex w-full justify-center text-lg md:text-xl font-light text-blue-dark uppercase")
 const ClassedHeader = classed("h4", "flex w-full justify-center text-2xl md:text-4xl font-semibold text-blue-dark")

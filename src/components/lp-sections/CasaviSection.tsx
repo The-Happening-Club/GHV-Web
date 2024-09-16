@@ -3,7 +3,7 @@ import { classed } from "@tw-classed/react";
 import Image from "next/image";
 import Link from "next/link";
 
-const ClassedSubHeader = classed("h1", "flex w-full font-normalidad text-md md:text-xl font-light uppercase")
+const ClassedSubHeader = classed("h1", "flex w-full font-normalidad text-slate-800 text-md md:text-xl font-light uppercase")
 const ClassedHeader = classed("h4", "flex font-normalidad text-2xl md:text-6xl font-semibold")
 
 const CasaviSection = () => {
