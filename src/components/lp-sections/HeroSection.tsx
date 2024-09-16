@@ -18,7 +18,7 @@ const HeroSection = () => {
             </div>
           </div>
           <div className="">
-              <h1 className="text-slate-50 font-semibold text-5xl md:text-7xl">Ihre Immobilie in guten Händen</h1>
+              <h1 className="text-slate-50 font-normalidad font-semibold text-5xl md:text-7xl">Ihre Immobilie in guten Händen</h1>
           </div>
         </div>
     </main>
