@@ -3,8 +3,8 @@ import { classed } from "@tw-classed/react";
 import Image from "next/image";
 import Link from "next/link";
 
-const ClassedSubHeader = classed("h1", "flex w-full font-normalidad text-lg md:text-xl font-light uppercase")
-const ClassedHeader = classed("h4", "flex font-normalidad text-3xl md:text-6xl font-semibold")
+const ClassedSubHeader = classed("h1", "flex w-full font-normalidad text-md md:text-xl font-light uppercase")
+const ClassedHeader = classed("h4", "flex font-normalidad text-2xl md:text-6xl font-semibold")
 
 const CasaviSection = () => {
 
@@ -20,10 +20,10 @@ const CasaviSection = () => {
                             <ClassedHeader>
                                 Hausverwaltung in Ihrer
                             </ClassedHeader>
-                            <span className="font-normalidad text-3xl md:text-6xl font-semibold md:pl-2 text-orange-400">Hand</span>
+                            <span className="font-normalidad text-2xl md:text-6xl font-semibold md:pl-2 text-orange-400">Hand</span>
                         </div>
                     </div>
-                    <p className="px-4 text-lg font-light">Mit der Casavi-App haben Sie jederzeit Zugriff auf alle wichtigen Informationen rund um Ihre Immobilie – einfach, transparent und direkt auf Ihrem Smartphone. Egal, ob aktuelle Abrechnungen, Mitteilungen oder wichtige Dokumente: Bei uns behalten Sie den Überblick. Die GHV setzt auf moderne Kommunikation und digitale Lösungen, um Ihnen den besten Service zu bieten.
+                    <p className="px-4 text-md font-light">Mit der Casavi-App haben Sie jederzeit Zugriff auf alle wichtigen Informationen rund um Ihre Immobilie – einfach, transparent und direkt auf Ihrem Smartphone. Egal, ob aktuelle Abrechnungen, Mitteilungen oder wichtige Dokumente: Bei uns behalten Sie den Überblick. Die GHV setzt auf moderne Kommunikation und digitale Lösungen, um Ihnen den besten Service zu bieten.
                     </p>
 
 
