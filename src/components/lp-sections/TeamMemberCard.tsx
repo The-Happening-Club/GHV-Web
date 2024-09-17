@@ -24,7 +24,7 @@ const TeamMemberCard: FC<IServiceCard> = ({
   info,
 }) => {
   return (
-    <div className="relative flex w-80 h-48 hover:h-64 md:w-96 items-center text-blue-dark  bg-slate-50 rounded-xl drop-shadow-xl overflow-hidden group z-10 transition-all duration-700">
+    <div className="relative flex w-80 h-48 hover:h-80 md:w-96 items-center text-blue-dark  bg-slate-50 rounded-xl drop-shadow-xl overflow-hidden group z-10 transition-all duration-700">
       <ImgContainer>
         <Image
           src={imgSrc}
