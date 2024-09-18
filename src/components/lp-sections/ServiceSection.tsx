@@ -20,19 +20,19 @@ const serviceCardArray = [
   {
     imgSrc: "/graphics/andreas_finanzielle_verwaltung.png",
     title: "Finanzielle Verwaltung",
-    info: "Die finanzielle Verwaltung sorgt für die finanzielle Gesundheit der Gemeinschaft. Sie umfasst die Erstellung eines Wirtschaftsplans, Überwachung von Einnahmen und",
+    info: "Die finanzielle Verwaltung sichert die wirtschaftliche Stabilität Ihrer Immobilie. Wir erstellen maßgeschneiderte Wirtschaftspläne, transparente Jahresabrechnungen und kümmern uns um die gewissenhafte Verwaltung von Rücklagen und Hausgeldern. Mit unserer professionellen Buchführung und der Kontrolle aller Rechnungen sorgen wir für klare, nachvollziehbare Finanzen und maximale Transparenz.",
     href: "/services",
   },
   {
     imgSrc: "/graphics/michaela_organisation_verwaltung.png",
     title: "Organistatorische Verwaltung",
-    info: "Die organisatorische Verwaltung ist von entscheidender Bedeutung, um die finanzielle Gesundheit der Gemeinschaft sicherzustellen. Dieser Teil der Finanzverwaltung beinhaltet Beispielsweise  die Erstellung eines Wirtschaftsplans...",
+    info: "Die organisatorische Verwaltung stellt sicher, dass alle Abläufe rund um Ihre Immobilie reibungslos funktionieren. Wir organisieren Eigentümerversammlungen, führen Beschlussprotokolle und kümmern uns um die Einhaltung von Haus- und Nutzungsordnungen. Zudem überwachen wir alle Verträge in enger Zusammenarbeit mit den Eigentümern und sorgen für eine strukturierte und transparente Kommunikation.",
     href: "/services",
   },
   {
     imgSrc: "/graphics/jesus_technische_verwaltung.png",
     title: "Technische Verwaltung",
-    info: "Die finanzielle Verwaltung sorgt für die finanzielle Gesundheit der Gemeinschaft.        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur fugit explicabo cum voluptas dolores cupiditate quasi consequuntur dolor, quas saepe ipsam labore vitae possimus voluptate suscipit inventore iusto laborum officiis.",
+    info: "Die technische Verwaltung ist der Schlüssel zur langfristigen Erhaltung Ihrer Immobilie. Wir führen regelmäßige Inspektionen des Gemeinschaftseigentums durch, überwachen Wartungs- und Reparaturarbeiten und sorgen dafür, dass die Gebäudetechnik und Außenanlagen stets in einwandfreiem Zustand sind. Mit unserer technischen Expertise erkennen wir frühzeitig Mängel und sparen Ihnen dadurch langfristig Kosten.",
     href: "/services",
   },
 ];
