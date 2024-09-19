@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const pageLinks = [
+  { link: "", name: "Home" },
   { link: "service", name: "Service" },
   { link: "objects", name: "Objekte" },
   { link: "about", name: "über uns" },
@@ -82,38 +83,36 @@ const NavLink = ({ link, name }: { link: string; name: string }) => {
 
 const NavBar = () => {
   return (
-    <nav className="flex h-20 w-full justify-center items-center px-4 bg-slate-50 overflow-hidden">
-      <div className="flex justify-between items-center w-full max-w-[1366px]">
-        <div className="flex w-fit z-50">
-          <Link href={"/"} className="flex items-center gap-4 text-blue-950">
-            <Image
-              src={"/logo/ghv_logo_200x200.png"}
-              width={40}
-              height={40}
-              alt="GHV Logo"
-              className="drop-shadow-md"
-            />
-            {/* Logo mit Text hinzufügen und Switchen */}
-            <div className="flex h-full flex-col justify-end">
-              <h3 className="hidden md:inline font-medium text-lg">
-                GHV Hausverwaltung
-              </h3>
-            </div>
-          </Link>
-        </div>
+    <>
+      <nav className="fixed flex h-20 w-full justify-center items-center px-4 bg-slate-50 overflow-hidden z-50">
+        <div className="flex justify-between items-center w-full max-w-[1366px]">
+          <div className="flex w-fit z-50">
+            <Link href={"/"} className="flex items-center gap-4 text-blue-950">
+              <Image
+                src={"/logo/ghv_logo_200x200.png"}
+                width={40}
+                height={40}
+                alt="GHV Logo"
+                className="drop-shadow-md"
+              />
+              {/* Logo mit Text hinzufügen und Switchen */}
+            </Link>
+          </div>
 
-        <div>
-          <div className="hidden md:flex gap-4">
-            {pageLinks.map((el, index) => (
-              <NavLink key={index} link={el.link} name={el.name} />
-            ))}
-          </div>
-          <div className="md:hidden">
-            <BurgerMenu />
+          <div>
+            <div className="hidden md:flex gap-4">
+              {pageLinks.map((el, index) => (
+                <NavLink key={index} link={el.link} name={el.name} />
+              ))}
+            </div>
+            <div className="md:hidden">
+              <BurgerMenu />
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+      <div className="h-20"></div>
+    </>
   );
 };
 

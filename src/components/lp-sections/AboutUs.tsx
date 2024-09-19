@@ -29,7 +29,7 @@ const serviceCardArray = [
     imgSrc: "/img/Michaela.png",
     name: "Michaela",
     surename: "Paetzmann",
-    position: "Stellvertretende Geschäftsführerin",
+    position: "Leiterin Sachbearbeitung und Buchhaltung",
     info: "Michaela P. unterstützt als erfahrene stellvertretende Geschäftsführerin Herrn Sanchez in allen Bereichen der Verwaltung. Sie sorgt dafür, dass Abläufe reibungslos und effizient verlaufen.",
   },
   {
