@@ -30,7 +30,7 @@ const TeamMemberCard: FC<IServiceCard> = ({
           src={imgSrc}
           width={800}
           height={200}
-          style={{ objectFit: "cover" }}
+          style={{ objectFit: "cover", height: "100%" }}
           alt=""
         />
       </ImgContainer>

@@ -14,6 +14,7 @@ export default function Home() {
       <ServiceSection />
       <CounterSection />
       <AboutUs />
+      {/* Testimonial Slider */}
       <Divider />
       <CasaviSection />
     </div>
