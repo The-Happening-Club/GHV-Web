@@ -9,7 +9,7 @@ const ClassedContainer = classed(
 );
 const ClassedLink = classed(
   "a",
-  "text-lg text-center md:text-left font-light not-italic"
+  "text-lg text-center xl:text-left font-light not-italic"
 );
 const ClassedLogoLink = classed(
   "div",
@@ -18,11 +18,11 @@ const ClassedLogoLink = classed(
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col gap-8 items-center md:justify-center bg-blue-dark text-slate-50  pt-8 pb-16 px-4 md:px-0">
-      <div className="flex flex-col md:flex-row gap-20 lg:gap-48 max-w-[1366px] ">
+    <footer className="flex flex-col gap-8 items-center md:justify-center bg-blue-dark text-slate-50  pt-8 pb-16 px-6 xl:px-0">
+      <div className="flex flex-col xl:flex-row gap-20 lg:gap-48 max-w-[1366px] ">
         <ClassedContainer>
           <ClassedHeader>Adresse</ClassedHeader>
-          <address className="text-lg text-center md:text-left font-light not-italic">
+          <address className="text-lg text-center xl:text-left font-light not-italic">
             Inselkammerstr. 11, <br /> 82008 Unterhaching
           </address>
         </ClassedContainer>

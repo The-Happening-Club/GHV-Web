@@ -7,7 +7,10 @@ const ClassedSection = classed(
   "section",
   "flex justify-center bg-gradient-to-t from-slate-50 to-slate-100 px-4 md:px-0 pt-48 pb-16 md:pb-32"
 );
-const ClassedSectionContainer = classed("div", " flex flex-col max-w-[1366px]");
+const ClassedSectionContainer = classed(
+  "div",
+  "w-full px-6 xl:px-0 flex flex-col max-w-[1366px]"
+);
 const ClassedSubHeader = classed(
   "h1",
   "flex w-full justify-center text-lg md:text-xl font-light text-blue-dark uppercase"
@@ -51,7 +54,7 @@ const AboutUs = () => {
           Unser <span className="text-orange-400">&nbsp;Team&nbsp;</span> für
           Sie
         </ClassedHeader>
-        <div className="flex flex-col md:flex-row  gap-16 mt-16">
+        <div className="flex flex-col items-center lg:flex-row  gap-16 mt-16">
           {serviceCardArray.map((el, index) => (
             <TeamMemberCard
               key={index}

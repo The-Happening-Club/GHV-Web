@@ -4,9 +4,12 @@ import ServiceCard from "./ServiceCard";
 
 const ClassedSection = classed(
   "section",
-  "flex justify-center bg-gradient-to-t from-slate-50 to-slate-100 px-6 md:px-0 pt-32 pb-32 md:pb-48"
+  "flex justify-center bg-gradient-to-t from-slate-50 to-slate-100 px-6 pt-32 pb-32 md:pb-48  transition-all duration-500 ease-out"
 );
-const ClassedSectionContainer = classed("div", " flex flex-col max-w-[1366px]");
+const ClassedSectionContainer = classed(
+  "div",
+  "flex flex-col w-full max-w-[1366px]"
+);
 const ClassedSubHeader = classed(
   "h1",
   "flex w-full justify-center text-lg md:text-xl font-light text-blue-dark uppercase"
@@ -47,7 +50,7 @@ const ServiceSection = () => {
           Unsere <span className="text-orange-400">&nbsp;Services&nbsp;</span>{" "}
           auf einen Blick
         </ClassedHeader>
-        <div className="flex flex-col md:flex-row gap-16 mt-16">
+        <div className="flex flex-col items-center lg:px-40 xl:flex-row gap-16 mt-16">
           {serviceCardArray.map((el, index) => (
             <ServiceCard
               key={index}

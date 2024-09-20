@@ -14,14 +14,14 @@ const ClassedHeader = classed(
 
 const CasaviSection = () => {
   return (
-    <div className="relative flex justify-center bg-slate-50 text-dark-blue px-10 md:px-0 pt-10 pb-14">
-      <div className="flex flex-col-reverse md:flex-row max-w-[1366px] gap-8 md:gap-0 bg-gradient-to-tr">
+    <div className="relative flex justify-center bg-slate-50 text-dark-blue px-10 xl:px-0 pt-10 pb-14">
+      <div className="flex flex-col-reverse xl:flex-row max-w-[1366px] w-full gap-8 md:gap-0 bg-gradient-to-tr">
         <div className="flex flex-col md:w-3/4 justify-center gap-10">
           <div className="flex flex-col gap-2 px-4 md:px-0">
             <ClassedSubHeader>Casavi Serviceportal</ClassedSubHeader>
-            <div className="flex flex-col md:flex-row whitespace-nowrap">
+            <div className="flex flex-col xl:flex-row whitespace-nowrap">
               <ClassedHeader>Hausverwaltung in Ihrer</ClassedHeader>
-              <span className="font-normalidad text-2xl md:text-6xl font-semibold md:pl-2 text-orange-400">
+              <span className="font-normalidad text-2xl md:text-6xl font-semibold xl:pl-2 text-orange-400">
                 Hand
               </span>
             </div>
@@ -48,7 +48,7 @@ const CasaviSection = () => {
         </div>
 
         <div className="">
-          <div className=" transition-all duration-700 easy-in-out pr-6">
+          <div className="flex justify-center transition-all duration-700 easy-in-out pr-6">
             <Image
               src="/graphics/casavi_oberfläche.png"
               height={1000}

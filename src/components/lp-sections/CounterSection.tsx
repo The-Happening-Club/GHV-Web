@@ -57,7 +57,7 @@ const CounterSection = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center md:justify-center bg-gradient-to-tl from-blue-dark to-blue-950 text-slate-50  pt-10 pb-20  gap-16">
+    <div className="flex flex-col items-center md:justify-center bg-gradient-to-tl from-blue-dark to-blue-950 text-slate-50 px-8 xl:px-0  pt-10 pb-20  gap-16">
       <div>
         <ClassedSubHeader>Zählen sie auf uns</ClassedSubHeader>
 
@@ -73,7 +73,7 @@ const CounterSection = () => {
           <span className="text-3xl font-thin">Einheiten</span>
         </div>
         <div className="flex flex-col items-center w-80">
-          <span className="text-6xl font-bold hover:bg-gradient-to-tr hover:from-orange-500 hover:to-orange-400 hover:bg-clip-text hover:text-transparent">
+          <span className="text-5xl font-bold hover:bg-gradient-to-tr hover:from-orange-500 hover:to-orange-400 hover:bg-clip-text hover:text-transparent">
             {years}+ Jahre
           </span>
           <span className="text-3xl font-thin">Expertise</span>
