@@ -40,7 +40,7 @@ const CounterSection = () => {
     }, 30);
     const yearInterval = setInterval(() => {
       setYears((prevYears) => {
-        if (prevYears < 40) {
+        if (prevYears < 30) {
           return prevYears + 1;
         } else {
           clearInterval(yearInterval);
