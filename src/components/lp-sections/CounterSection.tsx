@@ -20,7 +20,7 @@ const CounterSection = () => {
   useEffect(() => {
     const unitsInterval = setInterval(() => {
       setUnits((prevUnits) => {
-        if (prevUnits < 500) {
+        if (prevUnits < 400) {
           return prevUnits + 1;
         } else {
           clearInterval(unitsInterval);
