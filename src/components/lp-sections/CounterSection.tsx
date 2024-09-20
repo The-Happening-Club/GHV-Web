@@ -30,7 +30,7 @@ const CounterSection = () => {
     }, 5);
     const objectsInterval = setInterval(() => {
       setObjects((prevObject) => {
-        if (prevObject < 100) {
+        if (prevObject < 30) {
           return prevObject + 1;
         } else {
           clearInterval(objectsInterval);

@@ -66,7 +66,9 @@ const BurgerMenu = () => {
         }
       >
         {pageLinks.map((el, index) => (
-          <BurgerLink key={index} link={el.link} name={el.name} />
+          <div onClick={() => setBurgerOpen(!burgerOpen)}>
+            <BurgerLink key={index} link={el.link} name={el.name} />
+          </div>
         ))}
       </div>
     </>
