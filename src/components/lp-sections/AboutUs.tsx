@@ -1,7 +1,7 @@
 import React from "react";
 import { classed } from "@tw-classed/react";
 import TeamMemberCard from "./TeamMemberCard";
-import Button from "../essentials/Button";
+import Button from "../ui/Button";
 
 const ClassedSection = classed(
   "section",
@@ -9,7 +9,7 @@ const ClassedSection = classed(
 );
 const ClassedSectionContainer = classed(
   "div",
-  "w-full px-6 xl:px-0 flex flex-col max-w-[1366px]"
+  "w-full px-6 xl:px-0 flex flex-col max-w-[1366px] min-h-[800px]"
 );
 const ClassedSubHeader = classed(
   "h1",
