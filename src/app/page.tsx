@@ -1,4 +1,4 @@
-import Divider from "@/components/essentials/Divider";
+import Divider from "@/components/ui/Divider";
 import AboutUs from "@/components/lp-sections/AboutUs";
 import CasaviSection from "@/components/lp-sections/CasaviSection";
 import CounterSection from "@/components/lp-sections/CounterSection";

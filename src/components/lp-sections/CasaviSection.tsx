@@ -1,7 +1,7 @@
 import React from "react";
 import { classed } from "@tw-classed/react";
 import Image from "next/image";
-import Button from "../essentials/Button";
+import Button from "../ui/Button";
 
 const ClassedSubHeader = classed(
   "h1",

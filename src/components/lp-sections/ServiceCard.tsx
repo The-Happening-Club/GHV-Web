@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React, { FC } from "react";
 import { classed } from "@tw-classed/react";
-import Button from "../essentials/Button";
+import Button from "../ui/Button";
 
 interface IServiceCard {
   imgSrc: string;
