@@ -69,9 +69,8 @@ export default function ServicesPage() {
               <ServicesGridTile
                 key={index}
                 title={el.title}
-                longText={el.longText}
-                shortText={el.longText}
-                icon={<el.icon />}
+                subtitle={el.subtitle}
+                description={el.description}
               />
             ))}
           </div>
