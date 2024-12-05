@@ -15,9 +15,7 @@ const HeroSection = () => {
               <strong>Transparent, Persönlich, Kompetent.</strong>
               <br />
               Die GHV Gonzalez Hausverwaltung UG bietet Ihnen professionelle
-              Verwaltung mit modernster Technologie und persönlichem Service.
-              Schnell, nahbar und verlässlich – für eine sorgenfreie Betreuung
-              Ihrer Immobilie.
+              Verwaltung und persönlichem Service.
             </p>
             <Button prio={1} title="jetzt Anfragen!" href="/contact" />
           </div>
