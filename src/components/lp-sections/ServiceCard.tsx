@@ -16,7 +16,7 @@ const ImgContainer = classed("div", "flex w-fit h-fit");
 
 const ServiceCard: FC<IServiceCard> = ({ imgSrc, title, info, href }) => {
   return (
-    <div className="flex flex-col xl:w-96 items-center text-slate-50 gap-8 bg-blue-dark rounded-xl drop-shadow-xl px-8 pt-6 pb-8">
+    <div className="flex flex-col w-full sm:w-[450px] sm:h-[500px] items-center text-slate-50 gap-8 bg-blue-dark rounded-xl drop-shadow-xl px-8 pt-6 pb-8">
       <ImgContainer>
         <Image src={imgSrc} width={200} height={200} alt="" />
       </ImgContainer>

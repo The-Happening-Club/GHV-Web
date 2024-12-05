@@ -16,7 +16,6 @@ import { Inter } from "next/font/google";
 //   weight: "100 900",
 // });
 
-
 export const metadata: Metadata = {
   title: "Hausverwaltung",
   description: "GHV Hausverwaltungs Ug",
@@ -34,10 +33,7 @@ export default function RootLayout({
       <head>
         <link rel="stylesheet" href="https://use.typekit.net/lkl0sgw.css" />
       </head>
-      <body
-        className={inter.className}
-        
-      >
+      <body className={inter.className}>
         <NavBar />
         {children}
         <Footer />

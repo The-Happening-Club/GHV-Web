@@ -5,11 +5,11 @@ import { classed } from "@tw-classed/react";
 
 const ClassedSubHeader = classed(
   "h1",
-  "flex w-full justify-center text-lg md:text-xl font-light text-slate-50 uppercase"
+  "flex w-full justify-center text-xs md:text-sm font-light text-slate-50 uppercase"
 );
 const ClassedHeader = classed(
-  "h4",
-  "flex font-normalidad w-full justify-center text-2xl md:text-4xl font-semibold text-slate-50"
+  "h2",
+  "flex font-normalidad w-full justify-center text-xl md:text-2xl font-semibold text-slate-50"
 );
 
 const CounterSection = () => {
@@ -57,7 +57,7 @@ const CounterSection = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center md:justify-center bg-gradient-to-tl from-blue-dark to-blue-950 text-slate-50 px-8 xl:px-0  pt-10 pb-20  gap-16">
+    <div className="flex flex-col items-center md:justify-center bg-gradient-to-tl from-blue-dark to-blue-950 text-slate-50 px-8 xl:px-0  pb-36 pt-36  gap-16">
       <div>
         <ClassedSubHeader>Zählen sie auf uns</ClassedSubHeader>
 
@@ -65,7 +65,7 @@ const CounterSection = () => {
           Die <span className="text-orange-400">&nbsp;GHV&nbsp;</span> in Zahlen
         </ClassedHeader>
       </div>
-      <div className="flex flex-col md:flex-row items-center md:justify-center gap-24">
+      <div className="flex flex-col md:flex-row items-center md:justify-center gap-48">
         <div className="flex flex-col items-center w-52">
           <span className="text-6xl font-bold hover:bg-gradient-to-tr hover:from-orange-500 hover:to-orange-400 hover:bg-clip-text hover:text-transparent">
             {units}+

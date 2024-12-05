@@ -5,11 +5,11 @@ import Button from "../ui/Button";
 
 const ClassedSection = classed(
   "section",
-  "flex justify-center bg-gradient-to-t from-slate-50 to-slate-100 px-4 md:px-0 pt-48 pb-16 md:pb-32"
+  "flex justify-center bg-gradient-to-t from-slate-50 to-slate-100 px-4 md:px-0 pt-8 pb-8 md:pb-16"
 );
 const ClassedSectionContainer = classed(
   "div",
-  "w-full px-6 xl:px-0 flex flex-col max-w-[1366px] min-h-[800px]"
+  "w-full px-6 xl:px-0 flex flex-col justify-center items-center max-w-[1366px] min-h-[800px]"
 );
 const ClassedSubHeader = classed(
   "h1",
@@ -66,7 +66,7 @@ const AboutUs = () => {
             />
           ))}
         </div>
-        <div className="flex w-full h-full justify-center pt-20">
+        <div className="flex w-full justify-center pt-20">
           <Button
             title="Erfahren Sie mehr über uns"
             href={"/aboutus"}

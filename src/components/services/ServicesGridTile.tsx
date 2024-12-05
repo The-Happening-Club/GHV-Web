@@ -40,7 +40,7 @@ const ServicesGridTile: React.FC<ServicesGridTileProps> = ({
 
   return (
     <div
-      className="relative cursor-pointer group col-span-1 row-span-1 flex flex-col bg-blue-dark w-full h-auto aspect-square justify-center items-center gap-5 rounded-lg transition-all duration-700 ease-in-out hover:scale-105 hover:z-10 p-4 text-center"
+      className="relative cursor-pointer group col-span-1 row-span-1 flex flex-col bg-blue-dark w-full h-auto aspect-square justify-center items-center gap-5 rounded-lg transition-all duration-700 ease-in-out hover:scale-105 p-4 text-center -z-100"
       onClick={handleClick}
     >
       <span className="text-lg text-white max-w-full break-words text-wrap">
@@ -48,7 +48,7 @@ const ServicesGridTile: React.FC<ServicesGridTileProps> = ({
       </span>
       <div
         ref={tileRef}
-        className={`${visibility} flex-col justify-center items-left absolute bg-gradient-to-tr from-slate-100 to-slate-50 drop-shadow-lg w-96 h-80 transition-all duration-700 ease-in-out rounded-xl border border-slate-50 backdrop-blur-md p-4 gap-4`}
+        className={`${visibility} flex-col justify-center items-left absolute bg-gradient-to-tr from-slate-100 to-slate-50 drop-shadow-lg w-96 h-80 transition-all duration-700 ease-in-out rounded-xl border border-slate-50-md p-4 gap-4`}
       >
         <p className="font-bold text-lg">{subtitle}</p>
         <p>{description}</p>

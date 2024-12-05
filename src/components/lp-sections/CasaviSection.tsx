@@ -14,7 +14,7 @@ const ClassedHeader = classed(
 
 const CasaviSection = () => {
   return (
-    <div className="relative flex justify-center bg-slate-50 text-dark-blue px-10 xl:px-0 pt-10 pb-14">
+    <div className="relative flex justify-center text-dark-blue px-10 xl:px-0 pt-32 pb-48 text-blue-dark">
       <div className="flex flex-col-reverse xl:flex-row max-w-[1366px] w-full gap-8 md:gap-0 bg-gradient-to-tr">
         <div className="flex flex-col md:w-3/4 justify-center gap-10">
           <div className="flex flex-col gap-2 px-4 md:px-0">
