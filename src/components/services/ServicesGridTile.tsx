@@ -1,7 +1,4 @@
 import React, { useState, useRef, useEffect } from "react";
-import { serviceData, ServiceDataType } from "@/app/data/serviceData";
-
-import SVGIcon from "@/icons/Icon";
 
 type ServicesGridTileProps = {
   title: string;
@@ -46,13 +43,6 @@ const ServicesGridTile: React.FC<ServicesGridTileProps> = ({
       <span className="text-lg text-white max-w-full break-words text-wrap">
         {title}
       </span>
-      <div
-        ref={tileRef}
-        className={`${visibility} flex-col justify-center items-left absolute bg-gradient-to-tr from-slate-100 to-slate-50 drop-shadow-lg w-96 h-80 transition-all duration-700 ease-in-out rounded-xl border border-slate-50-md p-4 gap-4`}
-      >
-        <p className="font-bold text-lg">{subtitle}</p>
-        <p>{description}</p>
-      </div>
     </div>
   );
 };

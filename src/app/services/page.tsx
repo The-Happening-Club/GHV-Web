@@ -1,14 +1,13 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { use, useEffect, useState } from "react";
 import { serviceData, ServiceDataType } from "../data/serviceData";
 import ServiceNavigation from "@/components/navigation/ServiceNavigation";
 import ServicesGridTile from "@/components/services/ServicesGridTile";
 import Image from "next/image";
 import { classed } from "@tw-classed/react";
-import { useRouter } from "next/router";
-
-const GridWrapper = classed("section", "w-full max-w-[800px]");
+import { ServiceModal } from "@/components/services/ServiceModal";
+const GridWrapper = classed("section", "relative w-full max-w-[800px]");
 
 export default function ServicesPage() {
   const [serviceFilter, setServiceFilter] = useState("all");
@@ -16,6 +15,8 @@ export default function ServicesPage() {
   const [serviceImage, setServiceImage] = useState(
     "andreas_finanzielle_verwaltung.png"
   );
+  const [modalTitle, setModalTitle] = useState("");
+  const [modalVisibility, setModalVisibility] = useState(false);
 
   useEffect(() => {
     const serviceImages = [
@@ -48,8 +49,9 @@ export default function ServicesPage() {
         </h1>
 
         <ServiceNavigation onSendFilter={handleServiceFilter} />
+
         <GridWrapper>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 w-full p-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 w-full p-4 grid-flow-row">
             {activeIndex !== 0 ? (
               <div className="col-span-1 row-span-1 flex flex-col bg-transparent w-full h-auto aspect-square justify-center items-center gap-5 rounded-lg">
                 <Image

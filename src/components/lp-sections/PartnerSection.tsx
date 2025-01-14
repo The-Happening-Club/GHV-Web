@@ -32,7 +32,7 @@ const PartnerSection = () => {
           alt=""
         />
       </div>
-      <div className="flex grayscale aspect-square   hover:grayscale-0">
+      <div className="flex grayscale aspect-square hover:grayscale-0">
         <Image
           src="/logo/weinzierl_logo.png"
           width={200}
