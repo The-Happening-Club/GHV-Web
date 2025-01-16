@@ -107,9 +107,7 @@ export default function ServicesPage() {
       </div>
       <div
         className={`fixed flex flex-col w-svw h-svh bg-slate-900/50 backdrop-blur-sm justify-center items-center px-4 md:px-0 z-20 transition-all ease-in-out duration-700 ${
-          modalVisibility
-            ? "opacity-0 -top-full pointer-events-none"
-            : "opacity-100 top-0"
+          modalVisibility ? "opacity-0 pointer-events-none" : "opacity-100"
         }`}
       >
         <div className="relative -top-20 md:-top-40 flex flex-col p-8 max-w-[450px] bg-white rounded-2xl pb-8">
