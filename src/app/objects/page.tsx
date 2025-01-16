@@ -4,9 +4,19 @@ import Image from "next/image";
 
 export default function Objects() {
   return (
-    <div className="">
+    <div className="flex flex-col justify-center items-center gap-10 pt-8">
+      <div className="flex flex-col text-left md:text-center lg:max-w-[1366px] gap-8 px-8 md:pt-10">
+        <h1 className="text-4xl md:text-6xl font-normalidad font-medium">
+          Unsere Objekte
+        </h1>
+        <p className="text-lg md:text-2xl font-thin">
+          Bei uns stehen Ihre Immobilien im Mittelpunkt. Ob moderne Wohnanlagen,
+          charmante Altbauten oder repräsentative Gewerbeobjekte – wir kümmern
+          uns mit Leidenschaft und Kompetenz um jeden Aspekt der Verwaltung.
+        </p>
+      </div>
       <main className="flex justify-center">
-        <section className="w-full lg:max-w-[1366px] grid grid-cols-1 md:grid-cols-2 justify-items-center gap-10 md:gap-20 md:px-48 pb-40">
+        <section className="w-full lg:max-w-[1366px] grid grid-cols-1 md:grid-cols-2 justify-items-center gap-10 md:gap-20 px-4 md:px-48 pb-40">
           {properties.map((property) => (
             <ObjectCard
               key={property.id}
@@ -33,7 +43,7 @@ const ObjectCard = ({
   return (
     <div className="flex flex-col gap-8 shadow-lg border-2 p-4 rounded-xl w-fit">
       <div className="relative">
-        <div className="relative flex h-48 md:h-64 aspect-video bg-slate-300 rounded-lg justify-center items-center overflow-hidden">
+        <div className="relative flex md:h-64 aspect-video bg-slate-300 rounded-lg justify-center items-center overflow-hidden">
           <Image
             src={"/img/placeholder-house.jpg"}
             height={1920}
