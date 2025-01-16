@@ -1,8 +1,23 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
+import Lenis from "lenis";
 
 export default function Objects() {
+  useEffect(() => {
+    const lenis = new Lenis();
+
+    function raf(time: number) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
+    return () => {
+      lenis.destroy();
+    };
+  }, []);
   return (
     <div className="flex flex-col justify-center items-center gap-10 pt-8">
       <div className="flex flex-col text-left md:text-center lg:max-w-[1366px] gap-8 px-8 md:pt-10">

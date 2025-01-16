@@ -6,7 +6,20 @@ import Link from "next/link";
 
 export default function AboutPage() {
   const container = useRef<HTMLElement>(null);
+  useEffect(() => {
+    const lenis = new Lenis();
 
+    function raf(time: number) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
+    return () => {
+      lenis.destroy();
+    };
+  }, []);
   return (
     <>
       <main className="h-fit overflow-visible">
