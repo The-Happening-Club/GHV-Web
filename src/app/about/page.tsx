@@ -62,13 +62,6 @@ const Section1 = () => {
           Die GHV Gonzalez Hausverwaltung UG bietet Ihnen professionelle
           Verwaltung <br /> und persönlichen Service.
         </h2>
-        <Image
-          src="/icons/icon_chevron_down.png"
-          width={30}
-          height={10}
-          alt="chevron down icon"
-          className="animate-bounce mt-10"
-        />
       </div>
 
       <div className="md:w-1/2">

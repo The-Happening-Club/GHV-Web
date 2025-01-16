@@ -146,7 +146,7 @@ export default function ServicesPage() {
               <line x1="6" y1="6" x2="18" y2="18"></line>
             </svg>
           </div>
-          <header className="text-3xl font-normalidad font-medium mb-4 text-blue-dark">
+          <header className="text-2xl md:text-3xl font-normalidad font-medium mb-4 text-blue-dark">
             {modalValues.title}
           </header>
           <span className="text-xl mb-2">{modalValues.subtitle}</span>
