@@ -67,11 +67,7 @@ const AboutUs = () => {
           ))}
         </div>
         <div className="flex w-full justify-center pt-20">
-          <Button
-            title="Erfahren Sie mehr über uns"
-            href={"/aboutus"}
-            prio={3}
-          />
+          <Button title="Erfahren Sie mehr über uns" href={"/about"} prio={3} />
         </div>
       </ClassedSectionContainer>
     </ClassedSection>

@@ -37,14 +37,12 @@ const CasaviSection = () => {
             werden Sie sofort benachrichtigt. So behalten Sie den Überblick über
             Ihre Immobilie! Die GHV Gonzalez Hausverwaltung UG setzt auf moderne
             Kommunikation und digitale Lösungen, um Ihnen eine professionelle
-            und transparente Immobilienverwaltung zu bieten. <br />
-            <br />
-            Wenn sie mehr über Ihre Vorteile mit unserem Portal erfahren wollen
-            klicken Sie auf den Link.
+            und transparente Immobilienverwaltung zu bieten.
           </p>
-          <div className="flex w-full min-w-96 h-full items-end px-4 md:px-0">
+          {/*             Wenn sie mehr über Ihre Vorteile mit unserem Portal erfahren wollen
+            klicken Sie auf den Link.<div className="flex w-full min-w-96 h-full items-end px-4 md:px-0">
             <Button title="mehr erfahren" href={"/casavi"} prio={3} />
-          </div>
+          </div> */}
         </div>
 
         <div className="">
