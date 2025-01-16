@@ -9,7 +9,7 @@ export default function Objects() {
         <h1 className="text-4xl md:text-6xl font-normalidad font-medium">
           Unsere Objekte
         </h1>
-        <p className="text-lg md:text-2xl font-thin">
+        <p className="text-lg md:text-2xl font-light">
           Bei uns stehen Ihre Immobilien im Mittelpunkt. Ob moderne Wohnanlagen,
           charmante Altbauten oder repräsentative Gewerbeobjekte – wir kümmern
           uns mit Leidenschaft und Kompetenz um jeden Aspekt der Verwaltung.

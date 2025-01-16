@@ -1,15 +1,23 @@
 import React, { useState, useRef, useEffect } from "react";
 
-type ServicesGridTileProps = {
+interface ModalValueProps {
   title: string;
   subtitle: string;
   description: string;
-};
+}
+
+interface ServicesGridTileProps {
+  title: string;
+  subtitle: string;
+  description: string;
+  onClick: (params: ModalValueProps) => void;
+}
 
 const ServicesGridTile: React.FC<ServicesGridTileProps> = ({
   title,
   subtitle,
   description,
+  onClick,
 }) => {
   const [visibility, setVisibility] = useState("hidden");
   const tileRef = useRef<HTMLDivElement>(null);
@@ -28,11 +36,11 @@ const ServicesGridTile: React.FC<ServicesGridTileProps> = ({
   });
 
   const handleClick = () => {
-    if (visibility === "hidden") {
-      setVisibility("flex");
-    } else {
-      setVisibility("hidden");
-    }
+    onClick({
+      title: title,
+      subtitle: subtitle,
+      description: description,
+    });
   };
 
   return (

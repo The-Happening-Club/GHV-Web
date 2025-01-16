@@ -28,14 +28,14 @@ const ServiceNavigation: React.FC<FilterProps> = ({ onSendFilter }) => {
 
   return (
     <>
-      <nav className="cursor-pointer relative  w-[350px] md:w-[600px] justify-between h-8 transition-all duration-700 ease-in-out hidden sm:flex">
+      <nav className="cursor-pointer relative w-[350px] md:w-[600px] justify-between h-8 transition-all duration-700 ease-in-out flex">
         <button
           onClick={() => sendFilter("all", 0)}
           className={`flex justify-center transition-all duration-700 ease-in-out hover:text-orange-400 text-ellipsis ${
             activeIndex == 0 ? "text-orange-400" : "text-black"
           }`}
         >
-          <span className="w-[87.5px] md:w-[150px] overflow-x-hidden text-ellipsis">
+          <span className="w-[87.5px] md:w-[150px] overflow-x-hidden text-sm md:text-lg text-ellipsis">
             Übersicht
           </span>
         </button>
@@ -45,7 +45,7 @@ const ServiceNavigation: React.FC<FilterProps> = ({ onSendFilter }) => {
             activeIndex == 1 ? "text-orange-400" : "text-black"
           }`}
         >
-          <span className="w-[87.5px] md:w-[150px] overflow-x-hidden text-ellipsis">
+          <span className="w-[87.5px] md:w-[150px] overflow-x-hidden  text-sm md:text-lg text-ellipsis">
             Finanzen
           </span>
         </button>
@@ -55,7 +55,7 @@ const ServiceNavigation: React.FC<FilterProps> = ({ onSendFilter }) => {
             activeIndex == 2 ? "text-orange-400" : "text-black"
           }`}
         >
-          <span className="w-[87.5px] md:w-[150px] overflow-x-hidden text-ellipsis">
+          <span className="w-[87.5px] md:w-[150px] overflow-x-hidden text-sm md:text-lg text-ellipsis">
             Organistorisch
           </span>
         </button>
@@ -65,7 +65,7 @@ const ServiceNavigation: React.FC<FilterProps> = ({ onSendFilter }) => {
             activeIndex == 3 ? "text-orange-400" : "text-black"
           }`}
         >
-          <span className="w-[87.5px] md:w-[150px] overflow-x-hidden text-ellipsis">
+          <span className="w-[87.5px] md:w-[150px] overflow-x-hidden text-sm md:text-lg text-ellipsis">
             Technisch
           </span>
         </button>
@@ -76,10 +76,6 @@ const ServiceNavigation: React.FC<FilterProps> = ({ onSendFilter }) => {
           }}
         ></div>
       </nav>
-      {}
-      {/* <nav>
-        <button>{title}</button>
-      </nav> */}
     </>
   );
 };
