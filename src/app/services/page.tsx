@@ -7,6 +7,7 @@ import ServicesGridTile from "@/components/services/ServicesGridTile";
 import Image from "next/image";
 import { classed } from "@tw-classed/react";
 import { ServiceModal } from "@/components/services/ServiceModal";
+import Lenis from "lenis";
 
 const GridWrapper = classed("section", "relative w-full max-w-[800px]");
 
@@ -29,6 +30,21 @@ export default function ServicesPage() {
     description: "",
   });
   const [modalVisibility, setModalVisibility] = useState(true);
+
+  useEffect(() => {
+    const lenis = new Lenis();
+
+    function raf(time: number) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
+    return () => {
+      lenis.destroy();
+    };
+  }, []);
 
   useEffect(() => {
     const serviceImages = [
@@ -106,7 +122,7 @@ export default function ServicesPage() {
         </GridWrapper>
       </div>
       <div
-        className={`fixed flex flex-col w-svw h-svh bg-slate-900/50 backdrop-blur-sm justify-center items-center px-4 md:px-0 z-20 transition-all ease-in-out duration-700 ${
+        className={`fixed flex flex-col w-svw h-svh bg-slate-900/50 backdrop-blur-sm justify-center items-center px-4 md:px-0 z-20 transition-all ease-in-out duration-500 ${
           modalVisibility ? "opacity-0 pointer-events-none" : "opacity-100"
         }`}
       >
