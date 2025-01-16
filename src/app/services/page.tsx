@@ -67,7 +67,7 @@ export default function ServicesPage() {
   };
 
   return (
-    <div className="grid grid-cols-1 justify-items-center transition-all duration-700 min-h-[1000px]">
+    <div className="grid grid-cols-1 justify-items-center transition-all duration-400 ease-in-out min-h-[1000px]">
       {/* hinzufügen von info über die Services */}
       <div className="flex flex-col items-center w-full max-w-[1366px] mt-14 mb-24 gap-8 px-4">
         <h1 className="text-3xl md:text-4xl font-normalidad font-semibold">
@@ -114,7 +114,7 @@ export default function ServicesPage() {
       >
         <div className="relative -top-20 md:-top-40 flex flex-col p-8 max-w-[450px] bg-white rounded-2xl pb-8">
           <div
-            className="absolute top-0 right-0 m-2 flex w-6 h-6 justify-center items-center rounded-full bg-red-500 shadow-lg p-1"
+            className="absolute top-0 right-0 m-2 flex w-6 h-6 justify-center items-center rounded-full bg-red-500 shadow-lg p-1 cursor-pointer"
             onClick={handleModalClose}
           >
             <svg

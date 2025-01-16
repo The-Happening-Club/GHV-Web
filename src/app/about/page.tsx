@@ -18,14 +18,16 @@ export default function AboutPage() {
             viewBox="0 0 1296 2996"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute bottom-0 w-full h-full z-0"
+            className="absolute h-fit z-0"
           >
             <path
               d="M603.004 2994.5C603.004 2994.5 522.504 2422 665.004 2041.5C807.504 1661 1542.75 1529.76 1201 1188C768.004 755.002 5 343 5 -5.61982e-05"
               stroke="#120041"
-              stroke-width="10"
+              strokeWidth="10"
+              strokeLinecap="round"
             />
           </svg>
+
           <Section2
             title="Unsere Philosophie"
             paragraph={`Für uns stehen Menschen im Mittelpunkt – unsere Kunden und Mitarbeitenden. Immobilien sind für uns mehr als Gebäude: Sie sind Lebensräume und Werte, die geschützt werden wollen. \n\n Mit einem kleinen, engagierten Team stellen wir sicher, dass jede Immobilie die Aufmerksamkeit bekommt, die sie verdient.\n\nAls Familienunternehmen handeln wir flexibel, schnell und transparent.`}
