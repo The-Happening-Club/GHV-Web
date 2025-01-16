@@ -79,7 +79,7 @@ export const AdressSection = () => {
       <div className="grid grid-cols-1 md:grid-cols-[1fr_1fr] max-w-[1366px] gap-20 px-6 ">
         <div className="order-last md:-order-none overflow-hidden rounded-lg">
           <Image
-            src={"/img/ghv-contact-placeholder.png"}
+            src={"/graphics/ghv_map.png"}
             width={500}
             height={500}
             style={{ width: "100%", height: "100%" }}

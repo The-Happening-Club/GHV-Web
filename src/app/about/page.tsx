@@ -1,80 +1,58 @@
 "use client";
 import React, { useEffect, useRef } from "react";
-import { motion, useScroll, useTime, useTransform } from "motion/react";
 import Lenis from "lenis";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function AboutPage() {
-  useEffect(() => {
-    const lenis = new Lenis();
-
-    function raf(time: number) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-
-    requestAnimationFrame(raf);
-
-    return () => {
-      lenis.destroy();
-    };
-  }, []);
   const container = useRef<HTMLElement>(null);
-
-  const { scrollYProgress } = useScroll({
-    target: container,
-    offset: ["start start", "end end"],
-  });
 
   return (
     <>
       <main className="h-fit overflow-visible">
-        <Section1 scrollYProgress={scrollYProgress} />
-        <Section2
-          title="Unsere Philosophie"
-          paragraph="Für uns stehen Menschen im Mittelpunkt – unsere Kunden und Mitarbeitenden. Immobilien sind für uns mehr als Gebäude: Sie sind Lebensräume und Werte, die geschützt werden wollen.
+        <Section1 />
+        <div className="relative flex flex-col items-center overflow-hidden bg-blue-dark py-40">
+          <svg
+            width="1296"
+            height="2996"
+            viewBox="0 0 1296 2996"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="absolute bottom-0 w-full h-full z-0"
+          >
+            <path
+              d="M603.004 2994.5C603.004 2994.5 522.504 2422 665.004 2041.5C807.504 1661 1542.75 1529.76 1201 1188C768.004 755.002 5 343 5 -5.61982e-05"
+              stroke="#120041"
+              stroke-width="10"
+            />
+          </svg>
+          <Section2
+            title="Unsere Philosophie"
+            paragraph={`Für uns stehen Menschen im Mittelpunkt – unsere Kunden und Mitarbeitenden. Immobilien sind für uns mehr als Gebäude: Sie sind Lebensräume und Werte, die geschützt werden wollen. \n\n Mit einem kleinen, engagierten Team stellen wir sicher, dass jede Immobilie die Aufmerksamkeit bekommt, die sie verdient.\n\nAls Familienunternehmen handeln wir flexibel, schnell und transparent.`}
+            imgSrc="/graphics/michaela_organisation_verwaltung.png"
+          />
+          <Section2
+            title="Unsere Geschichte"
+            paragraph={`Unsere Wurzeln liegen in der renommierten GHV Glonner Hausverwaltungs GmbH.\n\n2016 führten wir diese Expertise in einem neu gegründeten Unternehmen fort, geleitet von Herrn Jesus Sanchez.\n\nDank unserer langjährigen Erfahrung in der WEG-Verwaltung (Wohnungseigentümergemeinschaften) genießen wir das Vertrauen zahlreicher Kunden.`}
+            imgSrc="/graphics/jesus_technische_verwaltung.png"
+          />
+          <Section2
+            title="Zukunftsorientiert"
+            paragraph={`Die GHV steht für langjährige Erfahrung und innovative Lösungen. Als Mitglied des Verbands der Immobilienverwalter Bayern e. V. bleiben wir rechtlich und fachlich immer auf dem neuesten Stand.\n\nEntscheiden Sie sich für eine Hausverwaltung, die persönlich und kompetent ist – für Sie und Ihre Immobilie.`}
+            imgSrc="/graphics/andreas_finanzielle_verwaltung.png"
+          />
+        </div>
 
-Mit einem kleinen, engagierten Team stellen wir sicher, dass jede Immobilie die Aufmerksamkeit bekommt, die sie verdient.
-
-Als Familienunternehmen handeln wir flexibel, schnell und transparent."
-          scrollYProgress={scrollYProgress}
-        />
-        <Section2
-          title="Unsere Geschichte"
-          paragraph="Für uns stehen Menschen im Mittelpunkt – unsere Kunden und Mitarbeitenden. Immobilien sind für uns mehr als Gebäude: Sie sind Lebensräume und Werte, die geschützt werden wollen.
-
-Mit einem kleinen, engagierten Team stellen wir sicher, dass jede Immobilie die Aufmerksamkeit bekommt, die sie verdient.
-
-Als Familienunternehmen handeln wir flexibel, schnell und transparent."
-          scrollYProgress={scrollYProgress}
-        />
-        <Section2
-          title="Zukunftsorientiert"
-          paragraph="Die GHV steht für langjährige Erfahrung und innovative Lösungen. Als Mitglied des Verbands der Immobilienverwalter Bayern e. V. bleiben wir rechtlich und fachlich immer auf dem neuesten Stand.
-
-Entscheiden Sie sich für eine Hausverwaltung, die persönlich und kompetent ist – für Sie und Ihre Immobilie."
-          scrollYProgress={scrollYProgress}
-        />
-
-        <Section3 scrollYProgress={scrollYProgress} />
+        <Section3 />
       </main>
     </>
   );
 }
 
-const Section1 = ({ scrollYProgress }: { scrollYProgress: any }) => {
-  const scale = useTransform(scrollYProgress, [0, 1], [1, 0.5]);
-  // const rotate = useTransform(scrollYProgress, [0, 1], [0, -5]);
-
+const Section1 = () => {
   return (
-    <motion.section
-      // style={{ rotate }}
-      className="sticky top-0 bg-slate-100 flex flex-col justify-between items-center  w-full h-[100vh] gap-10"
-    >
-      <motion.div
-        className="flex flex-col h-full justify-center items-center gap-4"
-        style={{ scale }}
-      >
+    <section className="bg-slate-100 flex flex-col justify-between items-center w-full h-fit gap-10 pt-40">
+      <div className="flex flex-col h-full justify-center items-center gap-4">
         <h1 className="text-8xl font-semibold text-blue-dark font-normalidad">
           Schön das Sie hier sind!
         </h1>
@@ -89,62 +67,76 @@ const Section1 = ({ scrollYProgress }: { scrollYProgress: any }) => {
           alt="chevron down icon"
           className="animate-bounce mt-10"
         />
-      </motion.div>
+      </div>
 
-      <motion.div className="h-fit" style={{ scale }}>
+      <div className="w-1/2">
         <Image
           src="/img/hero_sectio_img.png"
           width={1920}
           height={1080}
-          style={{ height: "100%", width: "auto" }}
+          style={{ height: "auto", width: "100%" }}
           alt="GHV Vorstand"
         />
-      </motion.div>
-    </motion.section>
+      </div>
+    </section>
   );
 };
 
 const Section2 = ({
-  scrollYProgress,
   title,
   paragraph,
+  imgSrc,
 }: {
-  scrollYProgress: any;
   title: string;
   paragraph: string;
+  imgSrc: string;
 }) => {
-  const scale = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
-  const rotate = useTransform(scrollYProgress, [0, 1], [-5, 0]);
-  const x = useTransform(scrollYProgress, [0, 0], [100, 100]);
   return (
-    <motion.section
-      // style={{ scale, rotate }}
-      className="sticky top-0 bg-blue-dark flex justify-start even:flex-row odd:flex-row-reverse  text-white  w-full h-[100vh] p-96"
-    >
-      <div className="w-1/2">
-        <h2 className="text-5xl sticky ">{title}</h2>
-        <p className="text-xl font-thin">{paragraph}</p>
+    <section className=" flex justify-start even:flex-row odd:flex-row-reverse  text-white  w-full h-fit px-96 p-20 gap-40 z-10">
+      <div className="flex flex-col w-1/2 gap-10">
+        <h2 className="text-5xl font-normalidad">{title}</h2>
+        <p className="text-xl font-thin whitespace-pre-line">{paragraph}</p>
       </div>
-    </motion.section>
+      <div className="flex w-1/2 justify-center items-center">
+        <div className="">
+          <Image
+            src={imgSrc}
+            width={500}
+            height={500}
+            style={{ width: "100%", height: "auto", objectFit: "contain" }}
+            alt="Team Foto"
+          />
+        </div>
+      </div>
+    </section>
   );
 };
-const Section3 = ({ scrollYProgress }: { scrollYProgress: any }) => {
-  const scale = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
-  const rotate = useTransform(scrollYProgress, [0, 1], [-5, 0]);
-  const x = useTransform(scrollYProgress, [0, 0], [100, 100]);
+const Section3 = () => {
   return (
-    <motion.section
-      // style={{ scale, rotate }}
-      className="sticky top-0 bg-blue-dark flex justify-start even:flex-row odd:flex-row-reverse  text-white  w-full h-[100vh] p-96"
-    >
-      <div className="w-svw h-fit">
+    <section className=" bg-blue-dark flex flex-col justify-center items-center text-white  w-full h-fit px-96 overflow-hidden gap-20 pb-40">
+      <div className="flex flex-col justify-center  items-center w-1/2 gap-4">
+        <h2 className="text-5xl font-normalidad">Wir freuen uns auf Sie!</h2>
+        <p className="text-xl font-thin text-center">
+          Entdecken Sie die Vorteile unserer flexiblen und modernen
+          Verwaltungslösungen. Kontaktieren Sie uns und überzeugen Sie sich
+          selbst!
+        </p>
+      </div>
+      <Link
+        href={"mailto:info@ghv-web.com"}
+        className="flex bg-orange-500 py-2 px-4 rounded-lg hover:bg-orange-200"
+      >
+        Jetzt Kontaktieren
+      </Link>
+      <div className="w-fit h-fit">
         <Image
           src="/img/ghv-team-foto.png"
           width={1920}
           height={1080}
           alt="Team Foto"
+          style={{ width: "100%", height: "auto", objectFit: "contain" }}
         />
       </div>
-    </motion.section>
+    </section>
   );
 };
