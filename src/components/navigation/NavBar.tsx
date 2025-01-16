@@ -61,8 +61,8 @@ const BurgerMenu = () => {
         className={`fixed flex flex-col items-center justify-center bg-slate-50 w-full h-full left-0 gap-8 transition-all duration-500 ease-in-out z-40`}
         style={
           burgerOpen
-            ? { transform: "translateY(0)" }
-            : { transform: "translateY(-120%)" }
+            ? { transform: "translateY(0)", opacity: 1 }
+            : { transform: "translateY(-120%)", opacity: 0 }
         }
       >
         {pageLinks.map((el, index) => (

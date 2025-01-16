@@ -28,8 +28,8 @@ const Footer = () => {
         </ClassedContainer>
         <ClassedContainer>
           <ClassedHeader>Datenschutz</ClassedHeader>
-          <ClassedLink>Impressum</ClassedLink>
-          <ClassedLink>DSGVO</ClassedLink>
+          <ClassedLink href="/impressum">Impressum</ClassedLink>
+          <ClassedLink href="/DSGVO">DSGVO</ClassedLink>
         </ClassedContainer>
         <ClassedContainer>
           <ClassedHeader>Kontakt</ClassedHeader>
