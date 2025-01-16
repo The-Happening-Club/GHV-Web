@@ -11,7 +11,7 @@ export default function AboutPage() {
     <>
       <main className="h-fit overflow-visible">
         <Section1 />
-        <div className="relative flex flex-col items-center overflow-hidden bg-blue-dark py-40">
+        <div className="relative flex flex-col items-center overflow-hidden bg-blue-dark py-20 md:py-40">
           <svg
             width="1296"
             height="2996"
@@ -51,12 +51,12 @@ export default function AboutPage() {
 
 const Section1 = () => {
   return (
-    <section className="bg-slate-100 flex flex-col justify-between items-center w-full h-fit gap-10 pt-40">
+    <section className="bg-slate-100 flex flex-col justify-between items-center w-full h-fit gap-10 pt-20 md:pt-40">
       <div className="flex flex-col h-full justify-center items-center gap-4">
-        <h1 className="text-8xl font-semibold text-blue-dark font-normalidad">
+        <h1 className="text-4xl text-center md:text-8xl font-semibold text-blue-dark font-normalidad">
           Schön das Sie hier sind!
         </h1>
-        <h2 className="text-blue-dark font-thin text-3xl text-center mt-10">
+        <h2 className="text-blue-dark font-thin text-xl md:text-3xl text-center mt-10">
           Die GHV Gonzalez Hausverwaltung UG bietet Ihnen professionelle
           Verwaltung <br /> und persönlichen Service.
         </h2>
@@ -69,7 +69,7 @@ const Section1 = () => {
         />
       </div>
 
-      <div className="w-1/2">
+      <div className="md:w-1/2">
         <Image
           src="/img/hero_sectio_img.png"
           width={1920}
@@ -92,12 +92,12 @@ const Section2 = ({
   imgSrc: string;
 }) => {
   return (
-    <section className=" flex justify-start even:flex-row odd:flex-row-reverse  text-white  w-full h-fit px-96 p-20 gap-40 z-10">
-      <div className="flex flex-col w-1/2 gap-10">
-        <h2 className="text-5xl font-normalidad">{title}</h2>
+    <section className="flex flex-col justify-start even:md:flex-row odd:md:flex-row-reverse  text-white  w-full h-fit md:px-96 px-8 md:p-20 mb-20 gap-40 z-10">
+      <div className="flex flex-col w-full md:w-1/2 gap-10">
+        <h2 className="text-4xl md:text-5xl font-normalidad">{title}</h2>
         <p className="text-xl font-thin whitespace-pre-line">{paragraph}</p>
       </div>
-      <div className="flex w-1/2 justify-center items-center">
+      <div className="flex w-full md:w-1/2 justify-center items-center">
         <div className="">
           <Image
             src={imgSrc}
@@ -113,9 +113,11 @@ const Section2 = ({
 };
 const Section3 = () => {
   return (
-    <section className=" bg-blue-dark flex flex-col justify-center items-center text-white  w-full h-fit px-96 overflow-hidden gap-20 pb-40">
-      <div className="flex flex-col justify-center  items-center w-1/2 gap-4">
-        <h2 className="text-5xl font-normalidad">Wir freuen uns auf Sie!</h2>
+    <section className=" bg-blue-dark flex flex-col justify-center items-center text-white  w-full h-fit px-8 md:px-96 overflow-hidden gap-20 md:pt-40">
+      <div className="flex flex-col justify-center items-center md:w-1/2 gap-4">
+        <h2 className="text-4xl md:text-5xl font-normalidad text-center">
+          Wir freuen uns auf Sie!
+        </h2>
         <p className="text-xl font-thin text-center">
           Entdecken Sie die Vorteile unserer flexiblen und modernen
           Verwaltungslösungen. Kontaktieren Sie uns und überzeugen Sie sich
@@ -128,7 +130,7 @@ const Section3 = () => {
       >
         Jetzt Kontaktieren
       </Link>
-      <div className="w-fit h-fit">
+      <div className="w-full md:w-fit h-fit">
         <Image
           src="/img/ghv-team-foto.png"
           width={1920}
