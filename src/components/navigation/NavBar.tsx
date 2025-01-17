@@ -7,7 +7,7 @@ import Link from "next/link";
 const pageLinks = [
   { link: "", name: "Home" },
   { link: "services", name: "Service" },
-  { link: "objects", name: "Objekte" },
+  // { link: "objects", name: "Objekte" },
   { link: "about", name: "über uns" },
   { link: "contact", name: "Kontakt" },
 ];
